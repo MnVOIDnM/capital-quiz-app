@@ -1,4 +1,4 @@
-import { prefData } from "./prefData";
+import { capitalData } from "./capitalData";
 
 const shuffle = ([...arr]) => {
   for (let i = arr.length - 1; i >= 0; i--) {
@@ -10,18 +10,34 @@ const shuffle = ([...arr]) => {
 
 export const createQuiz = () => {
   const quizChoices = [];
-  const answerRow = shuffle(prefData);
+  const shuffledData = shuffle(capitalData);
+  // useEffect(() => {
+  //   Promise.all(
+  //     urls.map((url) => {
+  //       return new Promise((resolve, reject) => {
+  //         const img = new Image();
+  //         img.onload = () => {
+  //           resolve(url);
+  //         };
+  //         img.onerror = reject;
+  //         img.src = url;
+  //       });
+  //     })
+  //   )
+  //     .then((urls) => {
+  //       setImageUrls(urls);
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //     });
+  // }, []);
 
   for (let i = 0; i < 47; i++) {
     let choices = [];
-    const answer = answerRow[i];
-    const restData = answerRow.filter((_, index) => index !== i);
-
-    const dummyData = shuffle(restData);
-    const dummyChoices = dummyData.slice(0, 3);
-
-    dummyChoices.forEach((choice) => {
-      choices.push(choice);
+    const answer = shuffledData[i].city;
+    const fakes = shuffledData[i].fakes;
+    fakes.forEach((fake) => {
+      choices.push(fake);
     });
     choices.push(answer);
     quizChoices.push(shuffle(choices));
@@ -29,7 +45,7 @@ export const createQuiz = () => {
   }
   const queue = {
     choices: quizChoices,
-    answer: answerRow,
+    answer: shuffledData,
   };
   return queue;
 };

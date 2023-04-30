@@ -5,7 +5,7 @@ export const capitalData = [
     nameKana: "ほっかいどう",
     city: "札幌市",
     cityKana: "さっぽろし",
-    fakes: "函館市,小樽市,旭川市",
+    fakes: ["函館市", "小樽市", "旭川市"],
     img: "img/imgSingle/hokkaidoSingle.png",
   },
   {
@@ -14,7 +14,7 @@ export const capitalData = [
     nameKana: "あおもりけん",
     city: "青森市",
     cityKana: "あおもりし",
-    fakes: "弘前市,八戸市,五所川原市",
+    fakes: ["弘前市", "八戸市", "五所川原市"],
     img: "img/imgSingle/aomoriSingle.png",
   },
   {
@@ -23,7 +23,7 @@ export const capitalData = [
     nameKana: "いわてけん",
     city: "盛岡市",
     cityKana: "もりおかし",
-    fakes: "宮古市,釜石市,岩手市",
+    fakes: ["宮古市", "釜石市", "岩手市"],
     img: "img/imgSingle/iwateSingle.png",
   },
   {
@@ -32,7 +32,7 @@ export const capitalData = [
     nameKana: "みやぎけん",
     city: "仙台市",
     cityKana: "せんだいし",
-    fakes: "宮城市,石巻市,気仙沼市",
+    fakes: ["宮城市", "石巻市", "気仙沼市"],
     img: "img/imgSingle/miyagiSingle.png",
   },
   {
@@ -41,7 +41,7 @@ export const capitalData = [
     nameKana: "あきたけん",
     city: "秋田市",
     cityKana: "あきたし",
-    fakes: "大館市,能代市,横手市",
+    fakes: ["大館市", "能代市", "横手市"],
     img: "img/imgSingle/akitaSingle.png",
   },
   {
@@ -50,7 +50,7 @@ export const capitalData = [
     nameKana: "やまがたけん",
     city: "山形市",
     cityKana: "やまがたし",
-    fakes: "酒田市,新庄市,米沢市",
+    fakes: ["酒田市", "新庄市", "米沢市"],
     img: "img/imgSingle/yamagataSingle.png",
   },
   {
@@ -59,7 +59,7 @@ export const capitalData = [
     nameKana: "ふくしまけん",
     city: "福島市",
     cityKana: "ふくしまし",
-    fakes: "郡山市,いわき市,相馬市",
+    fakes: ["郡山市", "いわき市", "相馬市"],
     img: "img/imgSingle/fukushimaSingle.png",
   },
   {
@@ -68,7 +68,7 @@ export const capitalData = [
     nameKana: "いばらきけん",
     city: "水戸市",
     cityKana: "みとし",
-    fakes: "つくば市,茨城市,日立市",
+    fakes: ["つくば市", "茨城市", "日立市"],
     img: "img/imgSingle/ibarakiSingle.png",
   },
   {
@@ -77,7 +77,7 @@ export const capitalData = [
     nameKana: "とちぎけん",
     city: "宇都宮市",
     cityKana: "うつのみやし",
-    fakes: "小山市,栃木市,佐野市",
+    fakes: ["小山市", "栃木市", "佐野市"],
     img: "img/imgSingle/tochigiSingle.png",
   },
   {
@@ -86,7 +86,7 @@ export const capitalData = [
     nameKana: "ぐんまけん",
     city: "前橋市",
     cityKana: "まえばしし",
-    fakes: "高崎市,桐生市,群馬市",
+    fakes: ["高崎市", "桐生市", "群馬市"],
     img: "img/imgSingle/gunmaSingle.png",
   },
   {
@@ -95,7 +95,7 @@ export const capitalData = [
     nameKana: "さいたまけん",
     city: "さいたま市",
     cityKana: "さいたまし",
-    fakes: "川越市,熊谷市,川口市",
+    fakes: ["川越市", "熊谷市", "川口市"],
     img: "img/imgSingle/saitamaSingle.png",
   },
   {
@@ -104,7 +104,7 @@ export const capitalData = [
     nameKana: "ちばけん",
     city: "千葉市",
     cityKana: "ちばし",
-    fakes: "船橋市,柏市,市川市",
+    fakes: ["船橋市", "柏市", "市川市"],
     img: "img/imgSingle/chibaSingle.png",
   },
   {
@@ -113,7 +113,7 @@ export const capitalData = [
     nameKana: "とうきょうと",
     city: "東京23区",
     cityKana: "とうきょう23く",
-    fakes: "杉並区,練馬区,足立区",
+    fakes: ["杉並区", "練馬区", "足立区"],
     img: "img/imgSingle/tokyoSingle.png",
   },
   {
@@ -122,7 +122,7 @@ export const capitalData = [
     nameKana: "かながわけん",
     city: "横浜市",
     cityKana: "よこはまし",
-    fakes: "川崎市,神奈川市,厚木市",
+    fakes: ["川崎市", "神奈川市", "厚木市"],
     img: "img/imgSingle/kanagawaSingle.png",
   },
   {
@@ -131,7 +131,7 @@ export const capitalData = [
     nameKana: "にいがたけん",
     city: "新潟市",
     cityKana: "にいがたし",
-    fakes: "長岡市,三条市,柏崎市",
+    fakes: ["長岡市", "三条市", "柏崎市"],
     img: "img/imgSingle/nigataSingle.png",
   },
   {
@@ -140,7 +140,7 @@ export const capitalData = [
     nameKana: "とやまけん",
     city: "富山市",
     cityKana: "とやまし",
-    fakes: "魚津市,氷見市,滑川市",
+    fakes: ["魚津市", "氷見市", "滑川市"],
     img: "img/imgSingle/toyamaSingle.png",
   },
   {
@@ -149,7 +149,7 @@ export const capitalData = [
     nameKana: "いしかわけん",
     city: "金沢市",
     cityKana: "かなざわし",
-    fakes: "七尾市,小松市,石川市",
+    fakes: ["七尾市", "小松市", "石川市"],
     img: "img/imgSingle/ishikawaSingle.png",
   },
   {
@@ -158,7 +158,7 @@ export const capitalData = [
     nameKana: "ふくいけん",
     city: "福井市",
     cityKana: "ふくいし",
-    fakes: "敦賀市,小浜市,大野市",
+    fakes: ["敦賀市", "小浜市", "大野市"],
     img: "img/imgSingle/fukuiSingle.png",
   },
   {
@@ -167,7 +167,7 @@ export const capitalData = [
     nameKana: "やまなしけん",
     city: "甲府市",
     cityKana: "こうふし",
-    fakes: "山梨市,大月市,都留市",
+    fakes: ["山梨市", "大月市", "都留市"],
     img: "img/imgSingle/yamanashiSingle.png",
   },
   {
@@ -176,7 +176,7 @@ export const capitalData = [
     nameKana: "ながのけん",
     city: "長野市",
     cityKana: "ながのし",
-    fakes: "松本市,上田市,岡谷市",
+    fakes: ["松本市", "上田市", "岡谷市"],
     img: "img/imgSingle/naganoSingle.png",
   },
   {
@@ -185,7 +185,7 @@ export const capitalData = [
     nameKana: "ぎふけん",
     city: "岐阜市",
     cityKana: "ぎふし",
-    fakes: "大垣市,各務原市,可児市",
+    fakes: ["大垣市", "各務原市", "可児市"],
     img: "img/imgSingle/gifuSingle.png",
   },
   {
@@ -194,7 +194,7 @@ export const capitalData = [
     nameKana: "しずおかけん",
     city: "静岡市",
     cityKana: "しずおかし",
-    fakes: "浜松市,沼津市,熱海市",
+    fakes: ["浜松市", "沼津市", "熱海市"],
     img: "img/imgSingle/shizuokaSingle.png",
   },
   {
@@ -203,7 +203,7 @@ export const capitalData = [
     nameKana: "あいちけん",
     city: "名古屋市",
     cityKana: "なごやし",
-    fakes: "豊田市,岡崎市,愛知市",
+    fakes: ["豊田市", "岡崎市", "愛知市"],
     img: "img/imgSingle/aichiSingle.png",
   },
   {
@@ -212,7 +212,7 @@ export const capitalData = [
     nameKana: "みえけん",
     city: "津市",
     cityKana: "つし",
-    fakes: "四日市市,鈴鹿市,三重市",
+    fakes: ["四日市市", "鈴鹿市", "三重市"],
     img: "img/imgSingle/mieSingle.png",
   },
   {
@@ -221,7 +221,7 @@ export const capitalData = [
     nameKana: "しがけん",
     city: "大津市",
     cityKana: "おおつし",
-    fakes: "彦根市,草津市,滋賀市",
+    fakes: ["彦根市", "草津市", "滋賀市"],
     img: "img/imgSingle/shigaSingle.png",
   },
   {
@@ -230,7 +230,7 @@ export const capitalData = [
     nameKana: "きょうとふ",
     city: "京都市",
     cityKana: "きょうとし",
-    fakes: "福知山市,宇治市,舞鶴市",
+    fakes: ["福知山市", "宇治市", "舞鶴市"],
     img: "img/imgSingle/kyotoSingle.png",
   },
   {
@@ -239,7 +239,7 @@ export const capitalData = [
     nameKana: "おおさかふ",
     city: "大阪市",
     cityKana: "おおさかし",
-    fakes: "堺市,豊中市,岸和田市",
+    fakes: ["堺市", "豊中市", "岸和田市"],
     img: "img/imgSingle/osakaSingle.png",
   },
   {
@@ -248,7 +248,7 @@ export const capitalData = [
     nameKana: "ひょうごけん",
     city: "神戸市",
     cityKana: "こうべし",
-    fakes: "尼崎市,西宮市,兵庫市",
+    fakes: ["尼崎市", "西宮市", "兵庫市"],
     img: "img/imgSingle/hyogoSingle.png",
   },
   {
@@ -257,7 +257,7 @@ export const capitalData = [
     nameKana: "ならけん",
     city: "奈良市",
     cityKana: "ならし",
-    fakes: "大和高田市,生駒市,天理市",
+    fakes: ["大和高田市", "生駒市", "天理市"],
     img: "img/imgSingle/naraSingle.png",
   },
   {
@@ -266,7 +266,7 @@ export const capitalData = [
     nameKana: "わかやまけん",
     city: "和歌山市",
     cityKana: "わかやまし",
-    fakes: "海南市,田辺市,御坊市",
+    fakes: ["海南市", "田辺市", "御坊市"],
     img: "img/imgSingle/wakayamaSingle.png",
   },
   {
@@ -275,7 +275,7 @@ export const capitalData = [
     nameKana: "とっとりけん",
     city: "鳥取市",
     cityKana: "とっとりし",
-    fakes: "米子市,倉吉市,境港市",
+    fakes: ["米子市", "倉吉市", "境港市"],
     img: "img/imgSingle/tottoriSingle.png",
   },
   {
@@ -284,7 +284,7 @@ export const capitalData = [
     nameKana: "しまねけん",
     city: "松江市",
     cityKana: "まつえし",
-    fakes: "浜田市,出雲市,島根市",
+    fakes: ["浜田市", "出雲市", "島根市"],
     img: "img/imgSingle/shimaneSingle.png",
   },
   {
@@ -293,7 +293,7 @@ export const capitalData = [
     nameKana: "おかやまけん",
     city: "岡山市",
     cityKana: "おかやまし",
-    fakes: "倉敷市,津山市,笠岡市",
+    fakes: ["倉敷市", "津山市", "笠岡市"],
     img: "img/imgSingle/okayamaSingle.png",
   },
   {
@@ -302,7 +302,7 @@ export const capitalData = [
     nameKana: "ひろしまけん",
     city: "広島市",
     cityKana: "ひろしまし",
-    fakes: "福山市,呉市,三原市",
+    fakes: ["福山市", "呉市", "三原市"],
     img: "img/imgSingle/hiroshimaSingle.png",
   },
   {
@@ -311,7 +311,7 @@ export const capitalData = [
     nameKana: "やまぐちけん",
     city: "山口市",
     cityKana: "やまぐちし",
-    fakes: "下関市,宇部市,萩市",
+    fakes: ["下関市", "宇部市", "萩市"],
     img: "img/imgSingle/yamaguchiSingle.png",
   },
   {
@@ -320,7 +320,7 @@ export const capitalData = [
     nameKana: "とくしまけん",
     city: "徳島市",
     cityKana: "とくしまし",
-    fakes: "鳴門市,小松島市,阿南市",
+    fakes: ["鳴門市", "小松島市", "阿南市"],
     img: "img/imgSingle/tokushimaSingle.png",
   },
   {
@@ -329,7 +329,7 @@ export const capitalData = [
     nameKana: "かがわけん",
     city: "高松市",
     cityKana: "たかまつし",
-    fakes: "丸亀市,坂出市,香川市",
+    fakes: ["丸亀市", "坂出市", "香川市"],
     img: "img/imgSingle/kagawaSingle.png",
   },
   {
@@ -338,7 +338,7 @@ export const capitalData = [
     nameKana: "えひめけん",
     city: "松山市",
     cityKana: "まつやまし",
-    fakes: "愛媛市,西条市,宇和島市",
+    fakes: ["愛媛市", "西条市", "宇和島市"],
     img: "img/imgSingle/ehimeSingle.png",
   },
   {
@@ -347,7 +347,7 @@ export const capitalData = [
     nameKana: "こうちけん",
     city: "高知市",
     cityKana: "こうちし",
-    fakes: "宿毛市,安芸市,南国市",
+    fakes: ["宿毛市", "安芸市", "南国市"],
     img: "img/imgSingle/kochiSingle.png",
   },
   {
@@ -356,7 +356,7 @@ export const capitalData = [
     nameKana: "ふくおかけん",
     city: "福岡市",
     cityKana: "ふくおかし",
-    fakes: "北九州市,久留米市,直方市",
+    fakes: ["北九州市", "久留米市", "直方市"],
     img: "img/imgSingle/fukuokaSingle.png",
   },
   {
@@ -365,7 +365,7 @@ export const capitalData = [
     nameKana: "さがけん",
     city: "佐賀市",
     cityKana: "さがし",
-    fakes: "唐津市,鳥栖市,多久市",
+    fakes: ["唐津市", "鳥栖市", "多久市"],
     img: "img/imgSingle/sagaSingle.png",
   },
   {
@@ -374,7 +374,7 @@ export const capitalData = [
     nameKana: "ながさきけん",
     city: "長崎市",
     cityKana: "ながさきし",
-    fakes: "佐世保市,島原市,諫早市",
+    fakes: ["佐世保市", "島原市", "諫早市"],
     img: "img/imgSingle/nagasakiSingle.png",
   },
   {
@@ -383,7 +383,7 @@ export const capitalData = [
     nameKana: "くまもとけん",
     city: "熊本市",
     cityKana: "くまもとし",
-    fakes: "八代市,人吉市,天草市",
+    fakes: ["八代市", "人吉市", "天草市"],
     img: "img/imgSingle/kumamotoSingle.png",
   },
   {
@@ -392,7 +392,7 @@ export const capitalData = [
     nameKana: "おおいたけん",
     city: "大分市",
     cityKana: "おおいたし",
-    fakes: "別府市,中津市,日田市",
+    fakes: ["別府市", "中津市", "日田市"],
     img: "img/imgSingle/oitaSingle.png",
   },
   {
@@ -401,7 +401,7 @@ export const capitalData = [
     nameKana: "みやざきけん",
     city: "宮崎市",
     cityKana: "みやざきし",
-    fakes: "都城市,延岡市,日南市",
+    fakes: ["都城市", "延岡市", "日南市"],
     img: "img/imgSingle/miyazakiSingle.png",
   },
   {
@@ -410,7 +410,7 @@ export const capitalData = [
     nameKana: "かごしまけん",
     city: "鹿児島市",
     cityKana: "かごしまし",
-    fakes: "鹿屋市,指宿市,枕崎市",
+    fakes: ["鹿屋市", "指宿市", "枕崎市"],
     img: "img/imgSingle/kagoshimaSingle.png",
   },
   {
@@ -419,7 +419,7 @@ export const capitalData = [
     nameKana: "おきなわけん",
     city: "那覇市",
     cityKana: "なはし",
-    fakes: "沖縄市,石垣市,浦添市",
+    fakes: ["沖縄市", "石垣市", "浦添市"],
     img: "img/imgSingle/okinawaSingle.png",
   },
 ];
