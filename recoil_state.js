@@ -9,3 +9,8 @@ export const isStartedState = atom({
   key: "isStarted",
   default: false,
 });
+
+export const imageUrlsState = atom({
+  key: "imageUrls",
+  default: [],
+});

@@ -11,26 +11,6 @@ const shuffle = ([...arr]) => {
 export const createQuiz = () => {
   const quizChoices = [];
   const shuffledData = shuffle(capitalData);
-  // useEffect(() => {
-  //   Promise.all(
-  //     urls.map((url) => {
-  //       return new Promise((resolve, reject) => {
-  //         const img = new Image();
-  //         img.onload = () => {
-  //           resolve(url);
-  //         };
-  //         img.onerror = reject;
-  //         img.src = url;
-  //       });
-  //     })
-  //   )
-  //     .then((urls) => {
-  //       setImageUrls(urls);
-  //     })
-  //     .catch((error) => {
-  //       console.error(error);
-  //     });
-  // }, []);
 
   for (let i = 0; i < 47; i++) {
     let choices = [];
@@ -43,9 +23,11 @@ export const createQuiz = () => {
     quizChoices.push(shuffle(choices));
     // quizChoices.push(choices);
   }
+
   const queue = {
     choices: quizChoices,
     answer: shuffledData,
   };
+
   return queue;
 };

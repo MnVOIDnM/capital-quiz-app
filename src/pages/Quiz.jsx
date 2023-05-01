@@ -8,39 +8,17 @@ import {
   VStack,
   Spacer,
 } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
-import { useRecoilState, useSetRecoilState } from "recoil";
-import { isStartedState } from "../../recoil_state";
-import { urls } from "../utils/urls";
+import { useState } from "react";
+import { useRecoilValue, useSetRecoilState } from "recoil";
+import { imageUrlsState, isStartedState } from "../../recoil_state";
 import { quizQueueState } from "../../recoil_state";
 
 const Quiz = () => {
   const setIsStarted = useSetRecoilState(isStartedState);
-  const [quizQueue, setQuizQueue] = useRecoilState(quizQueueState);
-  const [imageUrls, setImageUrls] = useState([]);
+  const quizQueue = useRecoilValue(quizQueueState);
+  const imageUrls = useRecoilValue(imageUrlsState);
   const [restQuiz, setRestQuiz] = useState(47);
   const counter = 47 - restQuiz;
-
-  useEffect(() => {
-    Promise.all(
-      urls.map((url) => {
-        return new Promise((resolve, reject) => {
-          const img = new Image();
-          img.onload = () => {
-            resolve(url);
-          };
-          img.onerror = reject;
-          img.src = url;
-        });
-      })
-    )
-      .then((urls) => {
-        setImageUrls(urls);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
 
   function backToHome() {
     setIsStarted(false);
@@ -55,10 +33,9 @@ const Quiz = () => {
   };
 
   const judge = (select) => {
-    if (select === quizQueue.answer[counter]) {
-      alert("正解！");
+    if (select === quizQueue.answer[counter].city) {
       updateQuiz();
-    } else if (select != quizQueue.answer[counter]) {
+    } else if (select != quizQueue.answer[counter].city) {
       alert("不正解！");
     }
   };
@@ -67,9 +44,10 @@ const Quiz = () => {
     <HStack w="100vw" h="90vh">
       <Square size="75vh" mt={1}>
         <img
-          src={imageUrls[counter]}
-          key={counter}
-          alt={`prefecture image ${counter}`}
+          src={quizQueue.answer[counter].img}
+          // src={imageUrls.find((url) => url === quizQueue.answer[counter].img)}
+          key={quizQueue.answer[counter].name}
+          alt={`prefecture image ${quizQueue.answer[counter].name}`}
         />
       </Square>
       <VStack h="70%">

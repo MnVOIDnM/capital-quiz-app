@@ -1,16 +1,33 @@
-import { useRecoilValue, useSetRecoilState } from "recoil";
-import { isStartedState, quizQueueState } from "../recoil_state";
+import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
+import { imageUrlsState, isStartedState } from "../recoil_state";
 import Title from "./pages/Title";
 import Quiz from "./pages/Quiz";
 import { useEffect } from "react";
-import { createQuiz } from "./utils/helpers";
+import { urls } from "./utils/urls";
 
 function App() {
   const isStarted = useRecoilValue(isStartedState);
-  const setQuizQueue = useSetRecoilState(quizQueueState);
+  const setImageUrls = useSetRecoilState(imageUrlsState);
 
   useEffect(() => {
-    setQuizQueue(createQuiz());
+    Promise.all(
+      urls.map((url) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.onload = () => {
+            resolve(url);
+          };
+          img.onerror = reject;
+          img.src = url;
+        });
+      })
+    )
+      .then((urls) => {
+        setImageUrls(urls);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }, []);
 
   return <>{isStarted ? <Quiz /> : <Title />}</>;
