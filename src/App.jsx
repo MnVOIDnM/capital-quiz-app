@@ -1,7 +1,7 @@
-import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
+import { useRecoilValue, useSetRecoilState } from "recoil";
 import { imageUrlsState, isStartedState } from "../recoil_state";
-import Title from "./pages/Title";
-import Quiz from "./pages/Quiz";
+import Title from "./Title";
+import Quiz from "./Quiz";
 import { useEffect } from "react";
 import { urls } from "./utils/urls";
 
