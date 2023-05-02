@@ -12,7 +12,7 @@ const QuizImage = React.memo(({ counter }) => {
       <VStack>
         <Heading size="4xl">{name}</Heading>
         <Square size="60vh" m={5}>
-          <img src={img} key={name} alt={`prefecture image ${name}`} />
+          <img src={img} alt={`prefecture image ${name}`} />
         </Square>
       </VStack>
     </>

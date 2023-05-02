@@ -20,7 +20,7 @@ const QuizChoices = React.memo(({ updateQuiz, counter }) => {
     if (select === quizQueue.answer[counter].city) {
       setButtonEffect("green", 200);
       updateQuiz();
-    } else if (select != quizQueue.answer[counter].city) {
+    } else {
       setButtonEffect("red", 500);
     }
   };

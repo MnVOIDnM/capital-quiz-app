@@ -11,14 +11,14 @@ const Quiz = () => {
   const [restQuiz, setRestQuiz] = useState(47);
   const counter = 47 - restQuiz;
 
-  function backToHome() {
+  function goToHome() {
     setIsStarted(false);
   }
 
   const updateQuiz = () => {
     if (restQuiz > 1) {
       setRestQuiz((prev) => prev - 1);
-    } else if (restQuiz === 1) {
+    } else {
       setIsStarted(false);
     }
   };
@@ -27,7 +27,7 @@ const Quiz = () => {
     <HStack w="100vw" h="90vh" justifyContent="center" alignItems="center">
       <QuizImage counter={counter} />
       <VStack h="70%">
-        <Button my={10} onClick={backToHome}>
+        <Button my={10} onClick={goToHome}>
           もどる
         </Button>
         <QuizChoices updateQuiz={updateQuiz} counter={counter} />
